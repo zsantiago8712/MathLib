@@ -1,14 +1,20 @@
 #include <iostream>
 #include "../vector/Vector.hpp"
+#include "../matrix/Matrix.hpp"
 
 int main(void){
 
-	Vec2f v2 = Vec2f(2, 0);
-	Vec2f v1 = Vec2f(1.0f);
-	printVn(v2);
-	printVn(v1);
+	Mat2 m = Mat2(1);
+	Mat3 m1 = Mat3(2);
+	Mat4 m2 = Mat4(3);
 
-	std::cout << "Magnitud: " << v2.magnitud() << std::endl;
-	v2.norm();
-	printVn(v2);
+	std::cout << "Matrix 2X2\n";
+	printMatrix(m);
+
+	std::cout << "Matrix 3X3\n";
+	printMatrix(m1);
+
+
+	std::cout << "Matrix 4X4\n";
+	printMatrix(m2);
 }

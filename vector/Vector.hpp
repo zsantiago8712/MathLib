@@ -159,23 +159,23 @@ class Vec4f{
 
 
 template <class Vecn>
-inline void printVn(const Vecn vecn){
+inline void printVn(const Vecn& vecn){
 	assert(false);
 }
 
 
 template<>
-inline void printVn<Vec2f>(const Vec2f v2){
+inline void printVn<Vec2f>(const Vec2f& v2){
 	std::cout << '[' << v2.m_x << ", " << v2.m_y << "]\n"; 
 }
 
 
 template<>
-inline void printVn<Vec3f>(const Vec3f v3){
+inline void printVn<Vec3f>(const Vec3f& v3){
 	std::cout << '[' << v3.m_x << ", " << v3.m_y << ", " << v3.m_z  << "]\n"; 
 }
 
 template<>
-inline void printVn<Vec4f>(const Vec4f v4){
+inline void printVn<Vec4f>(const Vec4f& v4){
 	std::cout << '[' << v4.m_x << ", " << v4.m_y << ", " << v4.m_z  << ", " << v4.m_w << "]\n"; 
 }
