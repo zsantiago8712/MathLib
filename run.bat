@@ -1,2 +1,2 @@
 cmake --build Debug;
-./Debug/MATH_LIB
+time ./Debug/MATH_LIB
